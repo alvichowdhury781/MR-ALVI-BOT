@@ -27,8 +27,8 @@ event.body.indexOf("Mim") === 0 ||event.body.indexOf("mim") === 0)) return;
     const content = encodeURIComponent(args.join(" "));
     if (!args[0]) return api.sendMessage("𝐔𝐅𝐅 𝐗𝐀𝐍'𝐒 𝐁𝐎𝐋𝐎__😽💋🩷", tid, mid);
     try {
-        console.log("Request:", `https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`); // Log request URL
-        const res = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=bn&message=${content}&filter=true`);
+        console.log("Request:", `http://ip.minehost.fun:25444/sim?type=ask&ask=${query}`); // Log request URL
+        const res = await axios.get(`http://ip.minehost.fun:25444/sim?type=ask&ask=${query}`);
         console.log("Response:", res.data); // Log response data
         const respond = res.data.success;
         if (res.data.error) {
